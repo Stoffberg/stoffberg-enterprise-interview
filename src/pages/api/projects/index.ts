@@ -8,6 +8,7 @@ export type Project = {
   startDate: string;
   endDate: string | null;
   pendingTasks: number;
+  completion: number;
 };
 
 const projects: Project[] = Array.from({ length: 50 }, (_, i) => ({
@@ -25,6 +26,7 @@ const projects: Project[] = Array.from({ length: 50 }, (_, i) => ({
         ).toISOString()
       : null,
   pendingTasks: Math.floor(Math.random() * 10),
+  completion: Math.floor(Math.random() * 100),
 }));
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
