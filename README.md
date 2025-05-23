@@ -6,7 +6,7 @@ Welcome! This is a technical interview project based on the [T3 Stack](https://c
 
 ## 🚀 Project Overview
 
-This project simulates a real enterprise dashboard, including user management, project tracking, metrics, and activity logs. You’ll encounter realistic bugs, performance issues, and feature requests—just like in a real engineering team.
+This project simulates a real enterprise dashboard, including user management, project tracking, metrics, and activity logs. You'll encounter realistic bugs, performance issues, and feature requests—just like in a real engineering team.
 
 **Tech Stack:**
 
@@ -42,7 +42,7 @@ This project simulates a real enterprise dashboard, including user management, p
 
 ## 🎯 Your Mission
 
-You’ll find your tasks in [`tasks.md`](./tasks.md). Each ticket simulates a real feature, bug, or performance issue. Please:
+You'll find your tasks in the `answers` branch in [`tasks.md`](./tasks.md). Each ticket simulates a real feature, bug, or performance issue. Please:
 
 - Commit regularly and open a PR for each ticket using the format:  
   `<conventional_type>/ticket_id/friendly_name`  
@@ -59,14 +59,14 @@ You’ll find your tasks in [`tasks.md`](./tasks.md). Each ticket simulates a re
 - **Layout & UI:** Enhance navigation, responsiveness, and user experience.
 - **Error Handling:** Standardize and improve error management across the app.
 
-See [`tasks.md`](./tasks.md) for full details and acceptance criteria.
+See [`tasks.md`](./tasks.md) in the `answers` branch for full details and acceptance criteria.
 
 ---
 
 ## 🐞 Debugging & Bug Fixes
 
-Check [`thought.md`](./thought.md) for a list of known bugs and hints.  
-You’re encouraged to:
+Check [`thought.md`](./thought.md) in the `answers` branch for a list of known bugs and hints.  
+You're encouraged to:
 
 - Investigate and fix bugs as you encounter them.
 - Use the provided hints to understand backend/frontend data shape mismatches and effect dependencies.
@@ -76,7 +76,7 @@ You’re encouraged to:
 
 ## 💡 Tips for Success
 
-- **Keep it simple:** Start with the provided scaffolding and add only what’s necessary.
+- **Keep it simple:** Start with the provided scaffolding and add only what's necessary.
 - **Be thorough:** Handle loading, error, and empty states gracefully.
 - **Be efficient:** Avoid unnecessary network requests and excessive renders.
 - **Be user-friendly:** Ensure the UI is intuitive and responsive.
