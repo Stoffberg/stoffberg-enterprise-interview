@@ -19,7 +19,7 @@ export default function MetricsCard({
     let start = 0;
     const end = value;
     const duration = 1000;
-    const increment = end / (duration / 16);
+    const increment = end / (duration / 50);
 
     const timer = setInterval(() => {
       start += increment;
@@ -29,7 +29,7 @@ export default function MetricsCard({
       } else {
         setDisplayValue(Math.floor(start));
       }
-    }, 16);
+    }, 50);
 
     return () => clearInterval(timer);
   }, [value]);

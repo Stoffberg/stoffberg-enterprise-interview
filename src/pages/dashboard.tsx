@@ -37,7 +37,7 @@ export default function Dashboard() {
     }
 
     void loadDashboardData();
-  }, [data]);
+  }, []);
 
   if (loading) {
     return (

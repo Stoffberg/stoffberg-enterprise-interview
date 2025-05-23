@@ -16,8 +16,14 @@ export default function ActivityLog() {
     const fetchActivities = async () => {
       try {
         const response = await fetch("/api/activities");
-        const data = (await response.json()) as Activity[];
-        setActivities(data);
+        const data = (await response.json()) as {
+          activities: Activity[];
+          total: number;
+          page: number;
+          limit: number;
+          totalPages: number;
+        };
+        setActivities(data.activities);
         setIsLoading(false);
       } catch (error) {
         console.error("Failed to fetch activities", error);
@@ -34,7 +40,10 @@ export default function ActivityLog() {
     };
 
     document.addEventListener("visibilitychange", handleVisibilityChange);
-  }, [activities]);
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, []);
 
   return (
     <div className="rounded-lg border p-4">

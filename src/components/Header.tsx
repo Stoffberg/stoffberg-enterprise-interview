@@ -14,26 +14,6 @@ export default function Header() {
                 Stoffberg Enterprise
               </Link>
             </div>
-            <nav className="hidden sm:ml-6 sm:flex sm:space-x-8">
-              <Link
-                href="/dashboard"
-                className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-              >
-                Dashboard
-              </Link>
-              <Link
-                href="/projects"
-                className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-              >
-                Projects
-              </Link>
-              <Link
-                href="/users"
-                className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-              >
-                Users
-              </Link>
-            </nav>
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:items-center">
             {/* TODO: Add notification bell here - FEAT-003 */}

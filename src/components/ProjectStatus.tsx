@@ -16,13 +16,15 @@ export default function ProjectStatus() {
       try {
         setIsLoading(true);
         const response = await fetch("/api/projects");
-        const data = (await response.json()) as Project[];
+        const data = (await response.json()) as {
+          data: Project[];
+          total: number;
+          page: number;
+          limit: number;
+          totalPages: number;
+        };
 
-        await new Promise((resolve) =>
-          setTimeout(resolve, Math.random() * 800),
-        );
-
-        setProjects(data);
+        setProjects(data.data);
         setIsLoading(false);
       } catch (error) {
         console.error("Failed to fetch projects", error);
