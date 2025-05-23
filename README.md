@@ -65,12 +65,13 @@ See [`tasks.md`](./tasks.md) in the `answers` branch for full details and accept
 
 ## 🐞 Debugging & Bug Fixes
 
-Check [`thought.md`](./thought.md) in the `answers` branch for a list of known bugs and hints.  
 You're encouraged to:
 
 - Investigate and fix bugs as you encounter them.
-- Use the provided hints to understand backend/frontend data shape mismatches and effect dependencies.
+- Use your debugging skills to understand backend/frontend data shape mismatches and effect dependencies.
 - Bonus points for identifying and fixing issues not explicitly listed!
+
+Note: There's a `thought.md` file in the `answers` branch that contains some hints and known issues. While you shouldn't look at it while working on the tasks (as it contains spoilers), feel free to check it out after you're done to compare your solutions!
 
 ---
 
@@ -96,7 +97,7 @@ You're encouraged to:
 
 - Open a PR for each completed ticket.
 - Ensure your code is clean, well-documented, and tested.
-- If you have questions, document your thought process in your PR or in a `thought.md` update.
+- If you have questions, document your thought process in your PR.
 
 ---
 
